@@ -1,0 +1,313 @@
+column,type,label,description
+CRASH_CRN,text,Crash Number	,Crash Record Number	
+DISTRICT,text,District	,District Number where crash occurred
+CRASH_COUNTY,text,County	,County Code Number where crash occurred
+MUNICIPALITY,text,Municipality,County Municipality Code
+POLICE_AGCY,text,Police Agency Code,Code of the reporting Police Agency
+CRASH_YEAR,int4,Crash Year	,Year when the crash occurred
+CRASH_MONTH,text,Crash Month	,Month when the crash occurred
+DAY_OF_WEEK,int4,Day of Week	,Day of the Week code when crash occurred
+TIME_OF_DAY,text,Time of Day	,The time of day when the crash occurred
+HOUR_OF_DAY,text,Hour of Day	,The hour of Day when the crash occurred
+ILLUMINATION,text,Illumination,"Code that defines lighting at crash scene
+1 – Daylight 2 – Dark – no street lights 3 – Dark – street lights 4 – Dusk 5 – Dawn 6 – Dark – unknown roadway lighting 8 – Other
+"
+WEATHER,text,Weather,"Code for the first weather condition at time of crash
+01 - Blowing Sand, Soil, Dirt 02 - Blowing Snow 03 - Clear 04 - Cloudy 05 - Fog, Smog, Smoke 06 - Freezing Rain or Freezing Drizzle 07 - Rain 08 - Severe Crosswinds 09 - Sleet or Hail 10 - Snow 98 - Other 99 - Unknown
+"
+ROAD_CONDITION,text,Road Condition,"Roadway Surface Condition Code
+0 - Dry
+1 - Wet
+2 - Sand/ mud/ dirt/ oil/ or gravel
+3 - Snow covered
+4 - Slush
+5 - Ice
+6 - Ice Patches
+7 - Water - standing or moving
+8 - Other
+9 - Unknown (expired)"
+COLLISION_TYPE,text,Collision Type,"Collision category that defines the crash
+0 - Non collision
+1 - Rear-end
+2 - Head-on
+3 - Rear-to-rear (Backing)
+4 - Angle
+5 - Sideswipe (same dir.)
+6 - Sideswipe (Opposite dir.)
+7 - Hit fixed object
+8 - Hit pedestrian
+9 - Other or Unknown"
+RELATION_TO_ROAD,text,Relation to Road,"Code for the crash's relativity to the road
+1 - On roadway
+2 - Shoulder
+3 - Median
+4 - Roadside (off trafficway; on vehicle area)
+5 - Outside trafficway (in area not meant for vehicles)
+6 - In parking lane
+7 - Gore (intersection of ramp and highway)
+9 - Unknown"
+INTERSECT_TYPE,text,Intersect Type,"Code that defines the Intersection Type
+00 - Mid-block
+01 - Four way intersection
+02 - ""T"" intersection
+03 - ""Y"" intersection
+04 - Traffic circle or Round About
+05 - Multi-leg intersection
+06 - On ramp
+07 - Off ramp
+08 - Crossover
+09 - Railroad crossing
+10 - Other
+99 - Unknown (expired)"
+TCD_TYPE,text,Traffic Control Device Type Code,"Code that defines the Traffic Control Device
+0 - Not applicable
+1 - Flashing traffic signal
+2 - Traffic signal
+3 - Stop sign
+4 - Yield sign
+5 - Active RR crossing controls
+6 - Passive RR crossing controls
+7 - Police officer or flagman
+8 - Other Type TCD
+9 - Unknown"
+URBAN_RURAL,text,Urban Rural Flag	,Code to classify crash as Urban or Rural based on municipality	
+LOCATION_TYPE,text,Location Type,"Code that defines the crash location
+0 - Not applicable
+1 - Underpass
+2 - Ramp
+3 - Bridge
+4 - Tunnel
+5 - Toll Booth
+6 - Cross over related
+7 - Driveway or Parking Lot
+8 - Ramp and bridge
+9 - Unknown"
+SCH_BUS_IND,text,School Bus Flag	,Did the crash involve a School Bus? (Y/N); Y = Yes N = No
+SCH_ZONE_IND,text,School Zone Flag	,Did the crash occur in a School Zone? (Y/N); Y = Yes N = No
+TOTAL_UNITS,int4,Total Units,Total count of all Vehicles and Pedestrians	
+PERSON_COUNT,int4,Person Count	,Total amount of people involved
+VEHICLE_COUNT,int4,Vehicle Count	,Total amount of all vehicles involved
+AUTOMOBILE_COUNT,int4,Automobile Count	,Total Amount of Automobiles Involved
+MOTORCYCLE_COUNT,int4,Motorcycle Count	,Total amount of Motorcycles Involved
+BUS_COUNT,int4,Bus Count	,Total amount of Buses involved
+SMALL_TRUCK_COUNT,int4,Small Truck Count	,Total amount of Small Trucks involved
+HEAVY_TRUCK_COUNT,int4,Heavy Truck Count	,Total amount of Heavy Trucks involved
+SUV_COUNT,int4,SUV Count	,Total count of sport utility vehicles involved
+VAN_COUNT,int4,Van Count	,Total amount of vans involved
+BICYCLE_COUNT,int4,Bicycle Count	,Total amount of Bicycles involved
+FATAL_COUNT,int4,Fatality Count	,Total amount of fatalities involved
+INJURY_COUNT,int4,Injury Count	,Total count of all injuries sustained
+MAJ_INJ_COUNT,int4,Major Injury Count,"Major Injury = Incapacitating injury, including bleeding wounds and 
+distorted members (amputations or broken bones), and 
+requires transport of the patient from the scene"
+MOD_INJ_COUNT,int4,Moderate Injury Count,"Moderate Injury = Non- incapacitating injury, including bruises, abrasions, 
+swelling, and limping. This is an injury that may require 
+some form of medical treatment or hospitalization."
+MIN_INJ_COUNT,int4,Minor Injury Count,"Minor Injury = Possible injury, although there may be no visible injuries, 
+and the patient complains of pain. This is an injury that 
+can be treated by basic first-aid application whether at the 
+scene or in medical facilities."
+UNK_INJ_DEG_COUNT,int4,Unknown Injury Degree count,No. of injuries with unknown severity
+UNK_INJ_PER_COUNT,int4,Unknown Injured Person Count,No. of people that are unknown if injured
+UNBELTED_OCC_COUNT,int4,Unbelted Occupant Count,Total count of all unbelted occupants
+UNB_DEATH_COUNT,int4,Unbelted Death Count,No. of people killed not wearing a seatbelt
+UNB_MAJ_INJ_COUNT,int4,Unbelted Major Injury Count,No. of people with major injuries not wearing a seatbelt
+BELTED_DEATH_COUNT,int4,Belted Death Count,Total Deaths of belted occupants
+BELTED_MAJ_INJ_COUNT,int4,Belted Major Injury Count,No. of people who sustained major injuries wearing a seatbelt
+MCYCLE_DEATH_COUNT,int4,Motorcycle Death Count,Total amount of Motorcyclist fatalities
+MCYCLE_MAJ_INJ_COUNT,int4,Motorcycle Major Injury Count,No. of Motorcyclists who sustained a major injury
+BICYCLE_DEATH_COUNT,int4,Bicyclist Death Count,Total amount of Bicyclist Fatalities
+BICYCLE_MAJ_INJ_COUNT,int4,Bicyclist Major Injury Cout,No. of Bicyclists who sustained a major injury
+PED_COUNT,int4,Pedestrian Count,Total amount of Pedestrians involved
+PED_DEATH_COUNT,int4,Pedestrian Death Count,Total amount of Pedestrian fatalities
+PED_MAJ_INJ_COUNT,int4,Pedestrian Major Injury Count,No. of Pedestrians who sustained a major injury
+COMM_VEH_COUNT,int4,Commercial Vehicle Count,Total Commercial vehicles involved
+MAX_SEVERITY_LEVEL,int4,Max Severity Level,"Injury severity level of the crash
+0 - Not injured 1 - Killed 2 – Suspected Serious injury 3 – Suspected Minor injury 4 – Possible Injury 8 - Injury/ Unknown Severity 9 - Unknown if Injured
+"
+DRIVER_COUNT_16YR,int4,Drive Count 16 years old	,Total amount of 16 year old drivers
+DRIVER_COUNT_17YR,int4,Drive Count 17 years old	,Total amount of 17 year old drivers
+DRIVER_COUNT_18YR,int4,Drive Count 18 years old	,Total amount of 18 year old drivers
+DRIVER_COUNT_19YR,int4,Drive Count 19 years old	,Total amount of 19 year old drivers
+DRIVER_COUNT_20YR,int4,Drive Count 20 years old	,Total amount of 20 year old drivers
+DRIVER_COUNT_50_64YR,int4,Drive Count 50-64 years old	,Total amount of 50 to 64 year old drivers
+DRIVER_COUNT_65_74YR,int4,Drive Count 65-74 years old	,Total amount of 65 to 74 year old drivers
+DRIVER_COUNT_75PLUS,int4,Drive Count 75+ years old	,Total amount of drivers ages 75 and up
+LATITUDE,text,Latitude	,GPS Coordinates from Police if present; Degrees:Min:Sec.Dec Sec
+LONGITUDE,text,Longitude,GPS Coordinates from Police if present; Degrees:Min:Sec.Dec Sec
+DEC_LAT,float8,Decimal Latitude	,Decimal Latitude for SR's; Degrees.Decimal Degrees
+DEC_LONG,float8,Decimal Longitude	,Decimal Longitude for SR's; Degrees.Decimal Degrees
+EST_HRS_CLOSED,int4,Estimated Hours Closed	,Estimated hours roadway was closed	
+LANE_CLOSED,int4,Lane Closed Flag	,"Was there a lane closure? (Y/N); 1=Y, 0 = N "
+LN_CLOSE_DIR,text,Lane Closed Direction Code	,"1 - North
+2 - South
+3 - East
+4 - West
+5 - North And South
+6 - East and West
+7 - All (N"
+NTFY_HIWY_MAINT,text,Highway Maintenance Notified Flag	,"PENNDOT highway maintenance notified? 0 = No, 1 = Yes"
+RDWY_SURF_TYPE_CD,text,Roadway Surface Type Code	,"Code for the Roadway surface type –only for fatal crashes	
+1 - Concrete
+2 - Blacktop
+3 - Brick or Block
+4 - Slag, Gravel, or Stone
+5 - Dirt
+8 - Other
+9 - Unknown"
+SPEC_JURIS_CD,text,Special Jurisdiction Code,"Code that defines any special jurisdiction – only for fatal crashes	
+0 - No Special Jurisdiction
+1 - National Park
+2 - Military
+3 - Indian Reservation
+4 - College/University Campus
+5 - Other Federal Sites
+8 - Other
+9 - Unknown"
+TCD_FUNC_CD,text,Code for Traffic Control Device state,"0 - No Controls
+1 - Device not Functioning
+2 - Device Functioning improperly
+3 - Device Functioning properly
+4 - Emergency Preemptive Signal
+9 - Unknown"
+TFC_DETOUR_IND,text,Traffic Detour Indicator,"Was the Traffic Detoured? (Y/N) 0 = No, 1 = Yes"
+WORK_ZONE_IND,text,Work Zone Flag	,"Did the crash occur in a work zone (Y/N) 0 = No, 1 = Yes"
+WORK_ZONE_TYPE,text,Work Zone Type Code	,"Code to define the type of Work Zone
+1 - Construction
+2 - Maintenance
+3 - Utility company"
+WORK_ZONE_LOC,text,The Work Zone Location Code,"1 - Before the 1st work zone warning sign
+2 - Advance warning area
+3 - Transition area
+4 - Activity area
+5 - Termination area
+8 - Other"
+CONS_ZONE_SPD_LIM,int4,Construction Zone Speed Limit,Speed limit for the Construction Zone
+WORKERS_PRES,text,Construction Workers Present,"Were construction personnel present? (Y/N); 0 = No, 1 = Yes"
+WZ_CLOSE_DETOUR,text,Work Zone Closed Detour	,"Was traffic rerouted due to work zone?(Y/N); 0 = No, 1 = Yes "
+WZ_FLAGGER,text,Work Zone Flagman Flag	,"Did Work zone have a flagman? (Y/N) 0 = No, 1 = Yes"
+WZ_LAW_OFFCR_IND,text,Work Zone Patrolman Flag	,"Did Work zone have a patrolman? (Y/N) 0 = No, 1 = Yes"
+WZ_LN_CLOSURE,text,Work Zone Lane Closure Flag	,"Did Work zone have a patrolman? (Y/N) 0 = No, 1 = Yes"
+WZ_MOVING,text,Work Zone Moving Flag	,"Was there moving work in the zone? (Y/N) 0 = No, 1 = Yes"
+WZ_OTHER,text,Work Zone Special Flag	,"Was this a special type of work zone? (Y/N) 0 = No, 1 = Yes"
+WZ_SHLDER_MDN,text,Work Zone Shoulder/Median Flag	,"Was a median/shoulder in the zone?; (Y/N) 0 = No, 1 = Yes"
+FLAG_CRN,text,,Crash Record Number
+INTERSTATE,int4,Interstate Flag	,"Non-Turnpike Interstate Indicator; 0 = No, 1 = Yes"
+STATE_ROAD,int4,State Road Flag	,"State Road Indicator; 0 = No, 1 = Yes"
+LOCAL_ROAD,int4,Local Road Flag	,"Local Road Indicator; 0 = No, 1 = Yes"
+LOCAL_ROAD_ONLY,int4,Local Road Only Flag	,"Local Road Only Indicator; 0 = No, 1 = Yes"
+TURNPIKE,int4,Turnpike Flag	,"Turnpike Indicator; 0 = No, 1 = Yes"
+WET_ROAD,int4,Wet Road Flag	,"Wet Road Indicator; 0 = No, 1 = Yes"
+SNOW_SLUSH_ROAD,int4,Snow Slush Road Flag	,"Snow Slush Road Indicator; 0 = No, 1 = Yes"
+ICY_ROAD,int4,Icy Road Flag	,"Icy Road Indicator; 0 = No, 1 = Yes"
+SUDDEN_DEER,int4,Sudden Deer Flag	,"Sudden Deer Indicator; 0 = No, 1 = Yes
+"
+SHLDR_RELATED,int4,Shoulder Related Flag	,"Shoulder Related Indicator; 0 = No, 1 = Yes"
+REAR_END,int4,Read End Flag	,"Rear End Collision Indicator; 0 = No, 1 = Yes"
+HO_OPPDIR_SDSWP,int4,Head On/Opposite Direction Flag	,"Head on or Side Swipe Indicator; 0 = No, 1 = Yes"
+HIT_FIXED_OBJECT,int4,Hit Fixed Object Flag	,"Hit Fixed Object Indicator; 0 = No, 1 = Yes"
+SV_RUN_OFF_RD,int4,Single Vehicle Run Off Road Flag	,"Single Vehicle Run Off Road Indicator; 0 = No, 1 = Yes"
+WORK_ZONE,int4,Work Zone Flag	,"Work Zone Indicator; 0 = No, 1 = Yes"
+PROPERTY_DAMAGE_ONLY,int4,Property Damage Only Flag	,"Property Damage Only Indicator; 0 = No, 1 = Yes"
+FATAL_OR_MAJ_INJ,int4,Fatal or Suspected Serious Injury Flag	,"The crash has at least one person who was killed or sustained a Major Injury; 0 = No, 1 = Yes"
+INJURY,int4,Injury Flag	,"Injury Indicator; 0 = No, 1 = Yes"
+FATAL,int4,Fatality Flag	,"Fatality Indicator; 0 = No, 1 = Yes"
+NON_INTERSECTION,int4,Non-Intersecetion Flag	,"Non Intersection Indicator; 0 = No, 1 = Yes"
+INTERSECTION,int4,Intersection Flag	,"Intersection Indicator; 0 = No, 1 = Yes"
+SIGNALIZED_INT,int4,Signalized Intersection Flag	,"The crash took place at a Signalized Intersection	
+Signalized Intersection Indicator; 0 = No, 1 = Yes"
+STOP_CONTROLLED_INT,int4,Stop Controlled Intersection,"The crash took place at a Stop Controlled Intersection? 0 = No, 1 = Yes"
+UNSIGNALIZED_INT,int4,Unsignalized Intersection,"The crash took place at an unsignalized Intersection Indicator; 0 = No, 1 = Yes"
+SCHOOL_BUS,int4,School Bus Flag,"The crash involved at least one School Bus ? 0 = No, 1 = Yes"
+SCHOOL_ZONE,int4,School Zone Flag,"The crash took place in a School Zone? 0 = No, 1 = Yes"
+HIT_DEER,int4,Hit Deer Flag,"At least one unit Hit a Deer; 0 = No, 1 = Yes"
+HIT_TREE_SHRUB,int4,Hit Tree or Shrub Flag,"At least one unit hit a Hit Tree or Shrub ?; 0 = No, 1 = Yes"
+HIT_EMBANKMENT,int4,Hit Embankment Flag,"At least one unit Hit Embankment? 0 = No, 1 = Yes"
+HIT_POLE,int4,Hit Pole Flag,"At least one unit Hit a Pole? 0 = No, 1 = Yes"
+HIT_GDRAIL,int4,Hit Guide Rail Flag,"At least one unit hit a guide rail? 0 = No, 1 = Yes"
+HIT_GDRAIL_END,int4,Hit Guide Rail End Flag,"At least one unit hit a guide rail end flag? 0 = No, 1 = Yes"
+HIT_BARRIER,int4,Hit Barrier Flag,"Hit Barrier Indicator; 0 = No, 1 = Yes"
+HIT_BRIDGE,int4,Hit Bridge Flag,"Hit Bridge Indicator; 0 = No, 1 = Yes"
+OVERTURNED,int4,Overturned Vehicle Indicator,"The crash involved at least one Overturned Vehicle? 0 = No, 1 = Yes"
+MOTORCYCLE,int4,Motorcycle Indicator,"The crash involved at least one Motorcycle? 0 = No, 1 = Yes"
+BICYCLE,int4,Bicycle Indicator,"A Bicycle was involved? 0 = No, 1 = Yes"
+HVY_TRUCK_RELATED,int4,Heavy Truck Related Flag,"At Least one Heavy Truck was involved? 0 = No, 1 = Yes"
+VEHICLE_FAILURE,int4,Vehicle Failure Indicator,"the crash involve At least one Vehicle Failure that contributed to the crash? 0 = No, 1 = Yes"
+TRAIN_TROLLEY,int4,Train or Trolley Indicator,"Train or Trolley Indicator; 0 = No, 1 = Yes"
+PHANTOM_VEHICLE,int4,Phantom Vehicle Indicator,"The crash involved at least one Unit that contributed to the crash but did not have any harmful events? 0 = No, 1 = Yes"
+ALCOHOL_RELATED,int4,Alcohol Related Indicator,"Alcohol Related Indicator; 0 = No, 1 = Yes"
+DRINKING_DRIVER,int4,Drinking Driver Indicator,"Drinking Driver Indicator; 0 = No, 1 = Yes"
+UNDERAGE_DRNK_DRV,int4,Under Age drinking driver Indicator,"Under Age drinking driver Indicator; 0 = No, 1 = Yes"
+UNLICENSED,int4,Unlicensed Driver Indicator,"Unlicensed Driver Indicator; 0 = No, 1 = Yes"
+CELL_PHONE,int4,Driver Using Cell Phone Indicator,"Driver Using Cell Phone Indicator; 0 = No, 1 = Yes"
+NO_CLEARANCE,int4,No Clearance Indicator,"No Clearance Indicator; 0 = No, 1 = Yes"
+RUNNING_RED_LT,int4,Driver Running Red Light Indicator,"Driver Running Red Light Indicator; 0 = No, 1 = Yes"
+TAILGATING,int4,Tailgating Indicator,"Tailgating Indicator; 0 = No, 1 = Yes"
+CROSS_MEDIAN,int4,Cross Median Indicator,"Cross Median Indicator; 0 = No, 1 = Yes"
+CURVE_DVR_ERROR,int4,Curve in Road Driver Error Indicator,"Curve in Road Driver Error Indicator; 0 = No, 1 = Yes"
+LIMIT_65MPH,int4,Limit 65MPH,The Crash took place on a roadway that had a posted Speed limit of 65 Miles Per Hour
+SPEEDING,int4,Speeding Indicator,"Speeding Indicator; 0 = No, 1 = Yes"
+SPEEDING_RELATED,int4,Speeding Related Indicator,"Speeding Related Indicator; 0 = No, 1 = Yes"
+AGGRESSIVE_DRIVING,int4,Aggressive Driving Indicator,"Aggressive Driving Indicator; 0 = No, 1 = Yes"
+FATIGUE_ASLEEP,int4,Fatigue or Asleep Indicator,"Fatigue or Asleep Indicator; 0 = No, 1 = Yes"
+DRIVER_16YR,int4,Driver is 16 Years of Age,"Driver is 16 Years of Age ; 0 = No, 1 = Yes"
+DRIVER_17YR,int4,Driver is 17 Years of Age Indicator,"Driver is 17 Years of Age Indicator; 0 = No, 1 = Yes"
+DRIVER_65_74YR,int4,Driver is between 65 and 74 Indicator,"Driver is between 65 and 74 Indicator; 0 = No, 1 = Yes"
+DRIVER_75PLUS,int4,Driver is 75 Years of Age Plus Indicator,"Driver is 75 Years of Age Plus Indicator; 0 = No, 1 = Yes"
+UNBELTED,int4,Anyone in crash unbelted indicator,"Anyone in crash unbelted indicator; 0 = No, 1 = Yes"
+PEDESTRIAN,int4,Pedestrian Indicator,"Pedestrian Indicator; 0 = No, 1 = Yes"
+DISTRACTED,int4,Distracted Driver Indicator,"Distracted Driver Indicator; 0 = No, 1 = Yes"
+CURVED_ROAD,int4,Curve in Road,"Curved Road;  0 = No, 1 = Yes"
+DRIVER_18YR,int4,Driver is 18 Years of Age Indicator,"Driver is 18 Years of Age Indicator; 0 = No, 1 = Yes"
+DRIVER_19YR,int4,Driver is 19 Years of Age Indicator,"Driver is 19 Years of Age Indicator; 0 = No, 1 = Yes"
+DRIVER_20YR,int4,Driver is 20 Years of Age Indicator,"Driver is 20 Years of Age Indicator; 0 = No, 1 = Yes"
+DRIVER_50_64YR,int4,Driver is 50 to 64 Years of Age Indicator,"Driver is 50 to 64 Years of Age Indicator; 0 = No, 1 = Yes"
+VEHICLE_TOWED,int4,Vehicle Towed Indicator,"Vehicle Towed Indicator; 0 = No, 1 = Yes"
+FIRE_IN_VEHICLE,int4,Fire in Vehicle Flag,"At least 1 Vehicle with Fire Damage; 0 = No, 1 = Yes"
+HIT_PARKED_VEHICLE,int4,Hit Parked Vehicle Indicator,"Hit Parked Vehicle Indicator; 0 = No, 1 = Yes"
+MC_DRINKING_DRIVER,int4,Motorcycle Driver Drinking Flag,"At least 1 Motorcycle driver has reported or suspected Alcohol Use; 0 = No, 1 = Yes"
+DRUGGED_DRIVER,int4,Drugged Driver Flag,
+INJURY_OR_FATAL,int4,Injury or Fatal Flag,"At least 1 Person Was Injured or Killed in the Crash; 0 = No, 1 = Yes"
+COMM_VEHICLE,int4,Commercial Vehicle Flag,"Crash has at least 1 involved Commercial Vehicle; 0 = No, 1 = Yes"
+IMPAIRED_DRIVER,int4,Impaired Driver Flag,"At least One Driver was Impaired by Drugs or Alcohol; 0 = No, 1 = Yes"
+DEER_RELATED,int4,Deer Related Flag,"Deer Related Indicator; 0 = No, 1 = Yes"
+DRUG_RELATED,int4,Drug Related Flag,"Drug Related Indicator; 0 = No, 1 = Yes"
+HAZARDOUS_TRUCK,int4,Hazardous Material Truck Flag,"At least one Heavy Truck carrying Hazardous Material; 0 = No, 1 = Yes"
+ILLEGAL_DRUG_RELATED,int4,Illegal Drug Related Flag,"Illegal Drug Related indicator; 0 = No, 1 = Yes"
+ILLUMINATION_DARK,int4,Dark Illumination Flag,"Illumination Indicates that the Crash Scene Lighting was Dark; 0 = No, 1 = Yes"
+MINOR_INJURY,int4,Minor Injury ,"Minor Injury Indicator; 0 = No, 1 = Yes"
+MODERATE_INJURY,int4,Moderate Injury,"Moderate Injury Indicator; 0 = No, 1 = Yes"
+MAJOR_INJURY,int4,Major Injury,"Major Injury Indicator; 0 = No, 1 = Yes"
+NHTSA_AGG_DRIVING,int4,NHTSA Aggressive Driving Flag	,The Crash meets the NHTSA definition of Aggressive Driving
+PSP_REPORTED,int4,Pennsylvania State Police Reported Flag	,"Crash Investigated by the Pennsylvania State Police; 0 = No, 1 = Yes"
+RUNNING_STOP_SIGN,int4,Running Stop Sign Flag	,"Driver Running Stop Sign? 0 = No, 1 = Yes"
+TRAIN,int4,Train Flag," The crash involved a Train? 0 = No, 1 = Yes"
+TROLLEY,int4,Trolley Flag," The crash involved a Trolley? 0 = No, 1 = Yes"
+ROADWAY_CRN,text,,Crash Record Number
+RDWY_SEQ_NUM,int4,Crash Roadway Sequence Number,Crash Roadway Sequence Number
+ADJ_RDWY_SEQ,int4,Adjusted Roadway Sequence Number	,Adjusted Roadway Sequence Number
+ACCESS_CTRL,text,Access Control Code,Access Control Code- only for state roads
+ROADWAY_COUNTY,text,Roadway County,County Code Number where crash occurred
+LANE_COUNT,int4,Lane Count,Travel Lane Count
+RDWY_ORIENT,text,Roadway Orientation Code,"E - East
+N - North
+S - South
+U - Unknown
+W - West"
+ROAD_OWNER,text,Road Owner,"Roadway maintained by state, local, or private jurisdiction. 
+
+1 - Interstate - non turnpike
+2 - State highway
+3 - County road
+4 - Local road or street
+5 - East-West portion of turnpike
+6 - Turnpike spur (extension)
+7 - Private Road
+9 - Other or Unknown"
+ROUTE,text,Route Number,Route Number only for state roads
+SPEED_LIMIT,int4,Speed Limit,Speed Limit of Roadway
+SEGMENT,text,Segment Number,Segment Number– only for state roads	
+OFFSET,int4,Offset within Segment,Offset (in feet) within the Segment – only for state roads	
+STREET_NAME,text,Street Name,Name of the Roadway
+TOT_INJ_COUNT,int4,Total Injury Count,Total Injuries	
+SCHOOL_BUS_UNIT,text,,
