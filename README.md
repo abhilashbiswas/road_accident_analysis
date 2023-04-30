@@ -32,7 +32,11 @@ This notebook contains all the code for unsupervised analysis and associated res
 ## How to run this codebase
 
 ### Step 1:
-Download the accident dataset from Western Pennsylvania Regional Data Center ([link here](https://data.wprdc.org/dataset/allegheny-county-crash-data/resource/2c13021f-74a9-4289-a1e5-fe0472c89881)). Rename the csv `accident_data.csv` and place it inside the `Data` folder. The title of the dataset is "Cumulative Crash Data (2004-2021) and can be downloaded in full by hitting the Download button at the link destination. The folder already contains the data dictionary for this data, called `accident_data_dict.csv`. 
+Clone the repo into a local folder. 
+`git clone https://github.com/abhilashbiswas/road_accident_analysis.git`
 
 ### Step 2:
-Once step 1 is done, any of the notebooks can be run. 
+Download the accident dataset from Western Pennsylvania Regional Data Center ([link here](https://data.wprdc.org/dataset/allegheny-county-crash-data/resource/2c13021f-74a9-4289-a1e5-fe0472c89881)). Rename the csv `accident_data.csv` and place it inside the `Data` folder. The title of the dataset is "Cumulative Crash Data (2004-2021) and can be downloaded in full by hitting the Download button at the link destination. The folder already contains the data dictionary for this data, called `accident_data_dict.csv`. 
+
+### Step 3:
+Once step 1 and 2 is done, clone any of the notebooks can be run. 
